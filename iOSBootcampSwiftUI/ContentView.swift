@@ -20,13 +20,13 @@ struct ContentView: View {
     
     
     var lists: Options = [
-    (AnyView(Colors()), "Lists"),
+    (AnyView(Colors()), "Colors"),
     (AnyView(Buttons()), "Buttons"),
     ]
     
     var general: Options = [
         (AnyView(Images()), "Images"),
-        (AnyView(BindingProperties()), "Binding Properties"),
+        (AnyView(Grids()), "Grids"),
     ]
     
     

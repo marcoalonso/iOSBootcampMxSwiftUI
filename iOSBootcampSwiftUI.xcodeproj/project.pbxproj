@@ -19,6 +19,7 @@
 		6C711F2F29C750F200119283 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C711F2E29C750F200119283 /* Images.swift */; };
 		6C711F3129C7514F00119283 /* Backgrounds&Overlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C711F3029C7514F00119283 /* Backgrounds&Overlays.swift */; };
 		6C711F3329C7518F00119283 /* BindingProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C711F3229C7518F00119283 /* BindingProperties.swift */; };
+		6C711F3529C7535C00119283 /* Grids.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C711F3429C7535C00119283 /* Grids.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		6C711F2E29C750F200119283 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		6C711F3029C7514F00119283 /* Backgrounds&Overlays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Backgrounds&Overlays.swift"; sourceTree = "<group>"; };
 		6C711F3229C7518F00119283 /* BindingProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindingProperties.swift; sourceTree = "<group>"; };
+		6C711F3429C7535C00119283 /* Grids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grids.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				6C711F2E29C750F200119283 /* Images.swift */,
 				6C711F2A29C750C700119283 /* Buttons.swift */,
 				6C711F2629C74B6000119283 /* Colors.swift */,
+				6C711F3429C7535C00119283 /* Grids.swift */,
 				6C711F1A29C741CB00119283 /* Assets.xcassets */,
 				6C711F1C29C741CB00119283 /* Preview Content */,
 			);
@@ -165,6 +168,7 @@
 				6C711F1929C741C900119283 /* ContentView.swift in Sources */,
 				6C711F2729C74B6000119283 /* Colors.swift in Sources */,
 				6C711F1729C741C900119283 /* iOSBootcampSwiftUIApp.swift in Sources */,
+				6C711F3529C7535C00119283 /* Grids.swift in Sources */,
 				6C711F2B29C750C700119283 /* Buttons.swift in Sources */,
 				6C711F2F29C750F200119283 /* Images.swift in Sources */,
 				6C711F3129C7514F00119283 /* Backgrounds&Overlays.swift in Sources */,
