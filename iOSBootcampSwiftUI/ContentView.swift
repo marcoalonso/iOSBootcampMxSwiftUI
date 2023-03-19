@@ -11,6 +11,12 @@ struct ContentView: View {
     
     typealias Options = [(AnyView, String)]
     
+    var general: Options = [
+        (AnyView(Images()), "Images"),
+        (AnyView(Grids()), "Grids"),
+        (AnyView(TextDemo()), "Texts"),
+    ]
+    
     var shapes: Options = [
     (AnyView(Shapes()), "Shapes"),
     (AnyView(Animation()), "Animation"),
@@ -24,10 +30,7 @@ struct ContentView: View {
     (AnyView(Buttons()), "Buttons"),
     ]
     
-    var general: Options = [
-        (AnyView(Images()), "Images"),
-        (AnyView(Grids()), "Grids"),
-    ]
+   
     
     
     var body: some View {

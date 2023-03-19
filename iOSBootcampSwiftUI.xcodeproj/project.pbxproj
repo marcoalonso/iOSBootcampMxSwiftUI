@@ -20,6 +20,7 @@
 		6C711F3129C7514F00119283 /* Backgrounds&Overlays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C711F3029C7514F00119283 /* Backgrounds&Overlays.swift */; };
 		6C711F3329C7518F00119283 /* BindingProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C711F3229C7518F00119283 /* BindingProperties.swift */; };
 		6C711F3529C7535C00119283 /* Grids.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C711F3429C7535C00119283 /* Grids.swift */; };
+		6C711F3729C7558200119283 /* TextDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C711F3629C7558200119283 /* TextDemo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		6C711F3029C7514F00119283 /* Backgrounds&Overlays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Backgrounds&Overlays.swift"; sourceTree = "<group>"; };
 		6C711F3229C7518F00119283 /* BindingProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindingProperties.swift; sourceTree = "<group>"; };
 		6C711F3429C7535C00119283 /* Grids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grids.swift; sourceTree = "<group>"; };
+		6C711F3629C7558200119283 /* TextDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDemo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				6C711F3429C7535C00119283 /* Grids.swift */,
 				6C711F1A29C741CB00119283 /* Assets.xcassets */,
 				6C711F1C29C741CB00119283 /* Preview Content */,
+				6C711F3629C7558200119283 /* TextDemo.swift */,
 			);
 			path = iOSBootcampSwiftUI;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				6C711F3129C7514F00119283 /* Backgrounds&Overlays.swift in Sources */,
 				6C711F2929C750B200119283 /* Animation.swift in Sources */,
 				6C711F3329C7518F00119283 /* BindingProperties.swift in Sources */,
+				6C711F3729C7558200119283 /* TextDemo.swift in Sources */,
 				6C711F2529C74B5800119283 /* Shapes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
