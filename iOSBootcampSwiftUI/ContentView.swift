@@ -8,14 +8,78 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    typealias Options = [(AnyView, String)]
+    
+    var shapes: Options = [
+    (AnyView(Shapes()), "Shapes"),
+    (AnyView(Animation()), "Animation"),
+    (AnyView(Icons()), "Icons"),
+    (AnyView(Icons()), "Backgroud/Overlays"),
+    ]
+    
+    
+    var lists: Options = [
+    (AnyView(Colors()), "Lists"),
+    (AnyView(Buttons()), "Buttons"),
+    ]
+    
+    var general: Options = [
+        (AnyView(Images()), "Images"),
+        (AnyView(BindingProperties()), "Binding Properties"),
+    ]
+    
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+    
+        NavigationView {
+            List {
+                // MARK:  General
+                ForEach(general, id: \.1) { current in
+                    
+                    NavigationLink(destination: current.0
+                                   , label: {
+                        VStack(alignment: .leading) {
+                            Text(current.1)
+                                .font(.title2)
+                        }
+                    })
+                }
+                
+                // MARK:  Shapes
+                Section(header: Text("Shapes")) {
+                    ForEach(shapes, id: \.1) { current in
+                        
+                        NavigationLink(destination: current.0
+                                       , label: {
+                            VStack(alignment: .leading) {
+                                Text(current.1)
+                                    .font(.title2)
+                            }
+                        })
+                    }
+                    
+                }
+                
+                // MARK:  Lists
+                Section(header: Text("Lists")) {
+                    ForEach(lists, id: \.1) { current in
+                        
+                        NavigationLink(destination: current.0
+                                       , label: {
+                            VStack(alignment: .leading) {
+                                Text(current.1)
+                                    .font(.title3)
+                            }
+                        })
+                    }
+                    
+                }
+                
+            }//List
+            .listStyle(GroupedListStyle())
+            .navigationTitle("iOS Bootcamp SwiftUI")
         }
-        .padding()
     }
 }
 
