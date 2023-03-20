@@ -13,8 +13,10 @@ struct ContentView: View {
     
     var general: Options = [
         (AnyView(Images()), "Images"),
+        (AnyView(PinnedViews()), "PinnedViews"),
         (AnyView(Grids()), "Grids"),
         (AnyView(TextDemo()), "Texts"),
+        (AnyView(ScrollViewDemo()), "ScrollView"),
     ]
     
     var shapes: Options = [
