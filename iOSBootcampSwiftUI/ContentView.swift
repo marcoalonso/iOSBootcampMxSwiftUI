@@ -17,6 +17,8 @@ struct ContentView: View {
         (AnyView(Grids()), "Grids"),
         (AnyView(TextDemo()), "Texts"),
         (AnyView(ScrollViewDemo()), "ScrollView"),
+        (AnyView(DatePickerDemo()), "Date Picker Demo"),
+        
     ]
     
     var shapes: Options = [
@@ -36,6 +38,7 @@ struct ContentView: View {
     
     var gestures: Options = [
         (AnyView(MagnifyView()), "MagnifyView"),
+        (AnyView(RotateView()), "Rotation View"),
     ]
    
     
