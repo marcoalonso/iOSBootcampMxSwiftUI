@@ -30,6 +30,7 @@ struct ContentView: View {
     var lists: Options = [
     (AnyView(Colors()), "Colors"),
     (AnyView(Buttons()), "Buttons"),
+    (AnyView(HeroAnimations()), "Animation Geometry"),
     ]
     
    
