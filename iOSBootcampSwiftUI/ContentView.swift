@@ -31,8 +31,12 @@ struct ContentView: View {
     (AnyView(Colors()), "Colors"),
     (AnyView(Buttons()), "Buttons"),
     (AnyView(HeroAnimations()), "Animation Geometry"),
+    (AnyView(NamespaceDemo()), "NamespaceDemo")
     ]
     
+    var gestures: Options = [
+        (AnyView(MagnifyView()), "MagnifyView"),
+    ]
    
     
     
@@ -52,6 +56,18 @@ struct ContentView: View {
                     })
                 }
                 
+                // MARK:  - Gestures
+                Section(header: Text("Gestures")) {
+                    ForEach(gestures, id: \.1) { gesture in
+                        NavigationLink (destination: gesture.0) {
+                            VStack(alignment: .leading) {
+                                Text(gesture.1)
+                                    .font(.title2)
+                            }
+                        }
+                    }
+                }
+                
                 // MARK:  Shapes
                 Section(header: Text("Shapes")) {
                     ForEach(shapes, id: \.1) { current in
@@ -64,7 +80,6 @@ struct ContentView: View {
                             }
                         })
                     }
-                    
                 }
                 
                 // MARK:  Lists
