@@ -39,6 +39,8 @@ struct ContentView: View {
     var gestures: Options = [
         (AnyView(MagnifyView()), "MagnifyView"),
         (AnyView(RotateView()), "Rotation View"),
+        (AnyView(DragView()), "Drag View"),
+        (AnyView(RotateAnimation3D()), "Rotation 3D View"),
     ]
    
     
@@ -55,6 +57,7 @@ struct ContentView: View {
                         VStack(alignment: .leading) {
                             Text(current.1)
                                 .font(.title2)
+                                
                         }
                     })
                 }
