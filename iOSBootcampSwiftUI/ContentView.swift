@@ -10,6 +10,12 @@ import SwiftUI
 struct ContentView: View {
     
     typealias Options = [(AnyView, String)]
+    typealias Navigations = [(AnyView, String, String)]
+    
+    var navigation: Navigations = [
+        (AnyView(NavigationButtonClick()), "Navigation Simple", "Navigation based on Button click"),
+        (AnyView(PassDataFromList()), "Passing Data from List", "how to pass data to a detail view"),
+    ]
     
     var general: Options = [
         (AnyView(Images()), "Images"),
@@ -49,6 +55,21 @@ struct ContentView: View {
     
         NavigationView {
             List {
+                // MARK:  Navigation
+                Section(header: Text("Navigation")) {
+                    ForEach(navigation, id: \.1) { current in
+                        
+                        NavigationLink(destination: current.0
+                                       , label: {
+                            VStack(alignment: .leading) {
+                                Text(current.1)
+                                    .font(.headline)
+                                Text(current.1)
+                                    .font(.subheadline)
+                            }
+                        })
+                    }
+                }
                 // MARK:  General
                 ForEach(general, id: \.1) { current in
                     
@@ -56,7 +77,7 @@ struct ContentView: View {
                                    , label: {
                         VStack(alignment: .leading) {
                             Text(current.1)
-                                .font(.title2)
+                                .font(.headline)
                                 
                         }
                     })
@@ -68,7 +89,7 @@ struct ContentView: View {
                         NavigationLink (destination: gesture.0) {
                             VStack(alignment: .leading) {
                                 Text(gesture.1)
-                                    .font(.title2)
+                                    .font(.headline)
                             }
                         }
                     }
@@ -82,7 +103,7 @@ struct ContentView: View {
                                        , label: {
                             VStack(alignment: .leading) {
                                 Text(current.1)
-                                    .font(.title2)
+                                    .font(.headline)
                             }
                         })
                     }
@@ -96,7 +117,7 @@ struct ContentView: View {
                                        , label: {
                             VStack(alignment: .leading) {
                                 Text(current.1)
-                                    .font(.title3)
+                                    .font(.headline)
                             }
                         })
                     }
