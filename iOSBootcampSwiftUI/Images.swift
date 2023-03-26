@@ -16,8 +16,9 @@ struct Images: View {
                 // .fit toma el tamaño original de la imagen sin deformarla
                     .aspectRatio(contentMode: .fit)
                     .shadow(radius: 10)
-                    .padding()
                     .cornerRadius(30)
+                    .padding(.leading, 20)
+                    .padding(.trailing, 20)
                 
                 Image("seat")
                     .resizable()

@@ -10,7 +10,13 @@
 		6C15CC8829CE1500003F51B8 /* NavigationButtonClick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C15CC8729CE1500003F51B8 /* NavigationButtonClick.swift */; };
 		6C15CC8A29CE1563003F51B8 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C15CC8929CE1563003F51B8 /* DetailView.swift */; };
 		6C15CC8C29CE168D003F51B8 /* PassDataFromList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C15CC8B29CE168C003F51B8 /* PassDataFromList.swift */; };
+		6C18FD4529CE60F40087FCBE /* ModalSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C18FD4429CE60F40087FCBE /* ModalSheet.swift */; };
+		6C18FD4729CE61610087FCBE /* ModalWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C18FD4629CE61610087FCBE /* ModalWindow.swift */; };
+		6C18FD4A29CE65000087FCBE /* ObservedObjectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C18FD4929CE65000087FCBE /* ObservedObjectDemo.swift */; };
+		6C18FD4C29CE65270087FCBE /* ModeloDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C18FD4B29CE65270087FCBE /* ModeloDemo.swift */; };
 		6C3614E429C8DD6F00A593B8 /* PinnedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3614E329C8DD6F00A593B8 /* PinnedViews.swift */; };
+		6C366D9B29D000960001680B /* NavigationProgrammatically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C366D9A29D000960001680B /* NavigationProgrammatically.swift */; };
+		6C366D9D29D001C40001680B /* DetailViewProgramatically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C366D9C29D001C40001680B /* DetailViewProgramatically.swift */; };
 		6C711F1729C741C900119283 /* iOSBootcampSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C711F1629C741C900119283 /* iOSBootcampSwiftUIApp.swift */; };
 		6C711F1929C741C900119283 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C711F1829C741C900119283 /* ContentView.swift */; };
 		6C711F1B29C741CB00119283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C711F1A29C741CB00119283 /* Assets.xcassets */; };
@@ -39,7 +45,13 @@
 		6C15CC8729CE1500003F51B8 /* NavigationButtonClick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButtonClick.swift; sourceTree = "<group>"; };
 		6C15CC8929CE1563003F51B8 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		6C15CC8B29CE168C003F51B8 /* PassDataFromList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataFromList.swift; sourceTree = "<group>"; };
+		6C18FD4429CE60F40087FCBE /* ModalSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSheet.swift; sourceTree = "<group>"; };
+		6C18FD4629CE61610087FCBE /* ModalWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalWindow.swift; sourceTree = "<group>"; };
+		6C18FD4929CE65000087FCBE /* ObservedObjectDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObjectDemo.swift; sourceTree = "<group>"; };
+		6C18FD4B29CE65270087FCBE /* ModeloDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeloDemo.swift; sourceTree = "<group>"; };
 		6C3614E329C8DD6F00A593B8 /* PinnedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedViews.swift; sourceTree = "<group>"; };
+		6C366D9A29D000960001680B /* NavigationProgrammatically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProgrammatically.swift; sourceTree = "<group>"; };
+		6C366D9C29D001C40001680B /* DetailViewProgramatically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewProgramatically.swift; sourceTree = "<group>"; };
 		6C711F1329C741C900119283 /* iOSBootcampSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSBootcampSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C711F1629C741C900119283 /* iOSBootcampSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSBootcampSwiftUIApp.swift; sourceTree = "<group>"; };
 		6C711F1829C741C900119283 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -82,8 +94,21 @@
 				6C15CC8729CE1500003F51B8 /* NavigationButtonClick.swift */,
 				6C15CC8929CE1563003F51B8 /* DetailView.swift */,
 				6C15CC8B29CE168C003F51B8 /* PassDataFromList.swift */,
+				6C18FD4429CE60F40087FCBE /* ModalSheet.swift */,
+				6C18FD4629CE61610087FCBE /* ModalWindow.swift */,
+				6C366D9A29D000960001680B /* NavigationProgrammatically.swift */,
+				6C366D9C29D001C40001680B /* DetailViewProgramatically.swift */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		6C18FD4829CE64C20087FCBE /* Combine */ = {
+			isa = PBXGroup;
+			children = (
+				6C18FD4929CE65000087FCBE /* ObservedObjectDemo.swift */,
+				6C18FD4B29CE65270087FCBE /* ModeloDemo.swift */,
+			);
+			path = Combine;
 			sourceTree = "<group>";
 		};
 		6C3614E529C8DD7500A593B8 /* Grids */ = {
@@ -114,6 +139,7 @@
 		6C711F1529C741C900119283 /* iOSBootcampSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				6C18FD4829CE64C20087FCBE /* Combine */,
 				6C15CC8629CE14F0003F51B8 /* Navigation */,
 				6C711F1629C741C900119283 /* iOSBootcampSwiftUIApp.swift */,
 				6C711F1829C741C900119283 /* ContentView.swift */,
@@ -238,20 +264,26 @@
 				6C711F2D29C750DE00119283 /* Icons.swift in Sources */,
 				6C711F1929C741C900119283 /* ContentView.swift in Sources */,
 				6C3614E429C8DD6F00A593B8 /* PinnedViews.swift in Sources */,
+				6C18FD4A29CE65000087FCBE /* ObservedObjectDemo.swift in Sources */,
 				6C711F2729C74B6000119283 /* Colors.swift in Sources */,
 				6C711F1729C741C900119283 /* iOSBootcampSwiftUIApp.swift in Sources */,
 				6CFF4CF229C93D1A00B1DFB9 /* RotateView.swift in Sources */,
+				6C366D9D29D001C40001680B /* DetailViewProgramatically.swift in Sources */,
+				6C18FD4529CE60F40087FCBE /* ModalSheet.swift in Sources */,
+				6C18FD4C29CE65270087FCBE /* ModeloDemo.swift in Sources */,
 				6CC2278C29CA7FCD00B52CE1 /* RotateAnimation3D.swift in Sources */,
 				6C711F3529C7535C00119283 /* Grids.swift in Sources */,
 				6C711F2B29C750C700119283 /* Buttons.swift in Sources */,
 				6CFF4CEB29C931AE00B1DFB9 /* NamespaceDemo.swift in Sources */,
 				6CFF4CF029C937A300B1DFB9 /* DatePickerDemo.swift in Sources */,
 				6C711F2F29C750F200119283 /* Images.swift in Sources */,
+				6C18FD4729CE61610087FCBE /* ModalWindow.swift in Sources */,
 				6C711F3929C7575700119283 /* ScrollViewDemo.swift in Sources */,
 				6C711F3129C7514F00119283 /* Backgrounds&Overlays.swift in Sources */,
 				6CFF4CED29C9339200B1DFB9 /* MagnifyView.swift in Sources */,
 				6CC2278A29CA7E0F00B52CE1 /* DragView.swift in Sources */,
 				6C711F2929C750B200119283 /* Animation.swift in Sources */,
+				6C366D9B29D000960001680B /* NavigationProgrammatically.swift in Sources */,
 				6C15CC8A29CE1563003F51B8 /* DetailView.swift in Sources */,
 				6C15CC8C29CE168D003F51B8 /* PassDataFromList.swift in Sources */,
 				6C711F3329C7518F00119283 /* BindingProperties.swift in Sources */,
