@@ -17,6 +17,8 @@ struct ContentView: View {
         (AnyView(PassDataFromList()), "Passing Data from List", "how to pass data to a detail view"),
         (AnyView(ModalSheet()), "Sheet with Modal", "Show a view with environment dismiss"),
         (AnyView(NavigationProgrammatically()), "NavigationProgrammatically", "Navigate other view after 2 seconds"),
+        (AnyView(PassingData()), "Passing Data", "Different types of data"),
+        (AnyView(DownloadWithCombine()), "Download with combine", "From fake API")
     ]
     
     var general: Options = [
@@ -27,6 +29,8 @@ struct ContentView: View {
         (AnyView(ScrollViewDemo()), "ScrollView"),
         (AnyView(DatePickerDemo()), "Date Picker Demo"),
         (AnyView(ObservedObjectDemo()), "Observed Object"),
+        
+        
     ]
     
     var shapes: Options = [
