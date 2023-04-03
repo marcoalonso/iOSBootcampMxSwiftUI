@@ -10,15 +10,20 @@ import SwiftUI
 struct ContentView: View {
     
     typealias Options = [(AnyView, String)]
-    typealias Navigations = [(AnyView, String, String)]
+    typealias ExampleViews = [(AnyView, String, String)]
     
-    var navigation: Navigations = [
+    var navigation: ExampleViews = [
         (AnyView(NavigationButtonClick()), "Navigation Simple", "Navigation based on Button click"),
         (AnyView(PassDataFromList()), "Passing Data from List", "how to pass data to a detail view"),
         (AnyView(ModalSheet()), "Sheet with Modal", "Show a view with environment dismiss"),
         (AnyView(NavigationProgrammatically()), "NavigationProgrammatically", "Navigate other view after 2 seconds"),
         (AnyView(PassingData()), "Passing Data", "Different types of data"),
         (AnyView(DownloadWithCombine()), "Download with combine", "From fake API")
+    ]
+    
+    var lists: ExampleViews = [
+        (AnyView(DisplayItemsInList()), "Display Items In List", "Numbers, Custom Objects Indices"),
+        (AnyView(FormDemo()), "Form Demo", "Simple form with alert and func to validate"),
     ]
     
     var general: Options = [
@@ -29,8 +34,10 @@ struct ContentView: View {
         (AnyView(ScrollViewDemo()), "ScrollView"),
         (AnyView(DatePickerDemo()), "Date Picker Demo"),
         (AnyView(ObservedObjectDemo()), "Observed Object"),
-        
-        
+        (AnyView(Colors()), "Colors"),
+        (AnyView(Buttons()), "Buttons"),
+        (AnyView(HeroAnimations()), "Animation Geometry"),
+        (AnyView(NamespaceDemo()), "NamespaceDemo")
     ]
     
     var shapes: Options = [
@@ -41,12 +48,7 @@ struct ContentView: View {
     ]
     
     
-    var lists: Options = [
-    (AnyView(Colors()), "Colors"),
-    (AnyView(Buttons()), "Buttons"),
-    (AnyView(HeroAnimations()), "Animation Geometry"),
-    (AnyView(NamespaceDemo()), "NamespaceDemo")
-    ]
+    
     
     var gestures: Options = [
         (AnyView(MagnifyView()), "MagnifyView"),
@@ -76,17 +78,36 @@ struct ContentView: View {
                         })
                     }
                 }
-                // MARK:  General
-                ForEach(general, id: \.1) { current in
-                    
-                    NavigationLink(destination: current.0
-                                   , label: {
-                        VStack(alignment: .leading) {
-                            Text(current.1)
-                                .font(.headline)
+                
+                // MARK:  Navigation
+                Section(header: Text("Lists")) {
+                    ForEach(lists, id: \.1) { current in
+                        
+                        NavigationLink(destination: current.0
+                                       , label: {
+                            VStack(alignment: .leading) {
+                                Text(current.1)
+                                    .font(.headline)
+                                Text(current.2)
+                                    .font(.subheadline)
+                            }
+                        })
+                    }
+                }
+                
+                // MARK:  Gestures
+                Section(header: Text("Gestures")) {
+                    ForEach(gestures, id: \.1) { current in
+                        
+                        NavigationLink(destination: current.0
+                                       , label: {
+                            VStack(alignment: .leading) {
+                                Text(current.1)
+                                    .font(.headline)
                                 
-                        }
-                    })
+                            }
+                        })
+                    }
                 }
                 
                 // MARK:  - Gestures
@@ -115,9 +136,9 @@ struct ContentView: View {
                     }
                 }
                 
-                // MARK:  Lists
-                Section(header: Text("Lists")) {
-                    ForEach(lists, id: \.1) { current in
+                // MARK:  General
+                Section(header: Text("General")) {
+                    ForEach(general, id: \.1) { current in
                         
                         NavigationLink(destination: current.0
                                        , label: {

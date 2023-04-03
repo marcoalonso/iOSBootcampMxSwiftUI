@@ -38,6 +38,8 @@
 		6CC2278A29CA7E0F00B52CE1 /* DragView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC2278929CA7E0F00B52CE1 /* DragView.swift */; };
 		6CC2278C29CA7FCD00B52CE1 /* RotateAnimation3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CC2278B29CA7FCD00B52CE1 /* RotateAnimation3D.swift */; };
 		6CCF744629D5F3FE0037F3D7 /* DownloadWithCombine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CCF744529D5F3FE0037F3D7 /* DownloadWithCombine.swift */; };
+		6CFE5FCC29DB3CD900376007 /* DisplayItemsInList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE5FCB29DB3CD900376007 /* DisplayItemsInList.swift */; };
+		6CFE5FCE29DB436200376007 /* FormDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE5FCD29DB436200376007 /* FormDemo.swift */; };
 		6CFF4CE829C92C3200B1DFB9 /* HeroAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF4CE729C92C3200B1DFB9 /* HeroAnimations.swift */; };
 		6CFF4CEB29C931AE00B1DFB9 /* NamespaceDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF4CEA29C931AE00B1DFB9 /* NamespaceDemo.swift */; };
 		6CFF4CED29C9339200B1DFB9 /* MagnifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFF4CEC29C9339200B1DFB9 /* MagnifyView.swift */; };
@@ -78,6 +80,8 @@
 		6CC2278929CA7E0F00B52CE1 /* DragView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragView.swift; sourceTree = "<group>"; };
 		6CC2278B29CA7FCD00B52CE1 /* RotateAnimation3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateAnimation3D.swift; sourceTree = "<group>"; };
 		6CCF744529D5F3FE0037F3D7 /* DownloadWithCombine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadWithCombine.swift; sourceTree = "<group>"; };
+		6CFE5FCB29DB3CD900376007 /* DisplayItemsInList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayItemsInList.swift; sourceTree = "<group>"; };
+		6CFE5FCD29DB436200376007 /* FormDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDemo.swift; sourceTree = "<group>"; };
 		6CFF4CE729C92C3200B1DFB9 /* HeroAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroAnimations.swift; sourceTree = "<group>"; };
 		6CFF4CEA29C931AE00B1DFB9 /* NamespaceDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamespaceDemo.swift; sourceTree = "<group>"; };
 		6CFF4CEC29C9339200B1DFB9 /* MagnifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnifyView.swift; sourceTree = "<group>"; };
@@ -158,26 +162,18 @@
 		6C711F1529C741C900119283 /* iOSBootcampSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				6C5BAFB929D4D22600214CE2 /* PassingData */,
+				6C711F1629C741C900119283 /* iOSBootcampSwiftUIApp.swift */,
 				6C711F1829C741C900119283 /* ContentView.swift */,
+				6CFE5FCA29DB3CC000376007 /* Lists */,
+				6CFE5FCF29DB436E00376007 /* General */,
+				6C5BAFB929D4D22600214CE2 /* PassingData */,
 				6C18FD4829CE64C20087FCBE /* Combine */,
 				6C15CC8629CE14F0003F51B8 /* Navigation */,
-				6C711F1629C741C900119283 /* iOSBootcampSwiftUIApp.swift */,
 				6CFF4CE929C92C3900B1DFB9 /* Animation */,
-				6C711F3229C7518F00119283 /* BindingProperties.swift */,
-				6C711F2C29C750DE00119283 /* Icons.swift */,
-				6C711F3029C7514F00119283 /* Backgrounds&Overlays.swift */,
-				6C711F3829C7575700119283 /* ScrollViewDemo.swift */,
-				6C711F2429C74B5800119283 /* Shapes.swift */,
-				6C711F3629C7558200119283 /* TextDemo.swift */,
-				6C711F2E29C750F200119283 /* Images.swift */,
-				6C711F2A29C750C700119283 /* Buttons.swift */,
-				6C711F2629C74B6000119283 /* Colors.swift */,
 				6C3614E529C8DD7500A593B8 /* Grids */,
 				6C711F1A29C741CB00119283 /* Assets.xcassets */,
 				6C711F1C29C741CB00119283 /* Preview Content */,
 				6CFF4CEE29C9344200B1DFB9 /* Gestures */,
-				6CFF4CEF29C937A300B1DFB9 /* DatePickerDemo.swift */,
 			);
 			path = iOSBootcampSwiftUI;
 			sourceTree = "<group>";
@@ -188,6 +184,31 @@
 				6C711F1D29C741CB00119283 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6CFE5FCA29DB3CC000376007 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				6CFE5FCD29DB436200376007 /* FormDemo.swift */,
+				6CFE5FCB29DB3CD900376007 /* DisplayItemsInList.swift */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		6CFE5FCF29DB436E00376007 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				6C711F3229C7518F00119283 /* BindingProperties.swift */,
+				6C711F2C29C750DE00119283 /* Icons.swift */,
+				6C711F3029C7514F00119283 /* Backgrounds&Overlays.swift */,
+				6C711F3829C7575700119283 /* ScrollViewDemo.swift */,
+				6C711F2429C74B5800119283 /* Shapes.swift */,
+				6C711F3629C7558200119283 /* TextDemo.swift */,
+				6C711F2E29C750F200119283 /* Images.swift */,
+				6C711F2A29C750C700119283 /* Buttons.swift */,
+				6C711F2629C74B6000119283 /* Colors.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 		6CFF4CE929C92C3900B1DFB9 /* Animation */ = {
@@ -203,6 +224,7 @@
 		6CFF4CEE29C9344200B1DFB9 /* Gestures */ = {
 			isa = PBXGroup;
 			children = (
+				6CFF4CEF29C937A300B1DFB9 /* DatePickerDemo.swift */,
 				6CFF4CEC29C9339200B1DFB9 /* MagnifyView.swift */,
 				6CFF4CF129C93D1A00B1DFB9 /* RotateView.swift */,
 				6CC2278929CA7E0F00B52CE1 /* DragView.swift */,
@@ -291,6 +313,7 @@
 				6CFF4CF229C93D1A00B1DFB9 /* RotateView.swift in Sources */,
 				6C366D9D29D001C40001680B /* DetailViewProgramatically.swift in Sources */,
 				6C18FD4529CE60F40087FCBE /* ModalSheet.swift in Sources */,
+				6CFE5FCE29DB436200376007 /* FormDemo.swift in Sources */,
 				6C18FD4C29CE65270087FCBE /* ModeloDemo.swift in Sources */,
 				6CC2278C29CA7FCD00B52CE1 /* RotateAnimation3D.swift in Sources */,
 				6C711F3529C7535C00119283 /* Grids.swift in Sources */,
@@ -301,6 +324,7 @@
 				6CFF4CF029C937A300B1DFB9 /* DatePickerDemo.swift in Sources */,
 				6C711F2F29C750F200119283 /* Images.swift in Sources */,
 				6C18FD4729CE61610087FCBE /* ModalWindow.swift in Sources */,
+				6CFE5FCC29DB3CD900376007 /* DisplayItemsInList.swift in Sources */,
 				6C711F3929C7575700119283 /* ScrollViewDemo.swift in Sources */,
 				6C711F3129C7514F00119283 /* Backgrounds&Overlays.swift in Sources */,
 				6CFF4CED29C9339200B1DFB9 /* MagnifyView.swift in Sources */,
