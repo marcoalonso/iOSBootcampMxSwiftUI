@@ -14,9 +14,27 @@ struct PullToRefreshDemo: View {
     var body: some View {
         NavigationView {
             List(refreshDates, id: \.self) { date in
-                Text("\(date)")
-                    .font(.title2)
-                    .foregroundColor(.purple)
+                VStack {
+                    Label("Formatted", systemImage: "clock")
+                    Text("\(date.formatted())")
+                        .font(.title2)
+                        .foregroundColor(.purple)
+                    
+                    Spacer()
+                    
+                    Label("Only Time", systemImage: "hourglass")
+                    Text("\(date.formatted(date: .omitted, time: .standard))")
+                        .font(.title2)
+                        .foregroundColor(.purple)
+                    Spacer()
+                    
+                    Label("Abreviated and time complete", systemImage: "calendar.badge.clock")
+                    Text("\(date.formatted(date: .abbreviated, time: .complete))")
+                        .font(.title2)
+                        .foregroundColor(.purple)
+                }
+                
+                
             }.listStyle(.sidebar)
                 .refreshable {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {

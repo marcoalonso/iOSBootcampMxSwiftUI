@@ -35,7 +35,7 @@ struct ContentView: View {
         (AnyView(ScrollViewDemo()), "ScrollView",""),
         (AnyView(DatePickerDemo()), "Date Picker Demo",""),
         (AnyView(ObservedObjectDemo()), "Observed Object",""),
-        (AnyView(Colors()), "Colors",""),
+        (AnyView(Colors()), "Colors","RadialGradient, AngularGradient and Gradient"),
         (AnyView(Buttons()), "Buttons",""),
         (AnyView(HeroAnimations()), "Animation Geometry",""),
         (AnyView(NamespaceDemo()), "NamespaceDemo",""),
@@ -65,12 +65,11 @@ struct ContentView: View {
                             VStack(alignment: .leading) {
                                 Text(current.1)
                                     .font(.headline)
-                                Text(current.1)
+                                Text(current.2)
                                     .font(.subheadline)
                             }
                         })
                     }
-                    .id("Content")
                 }
                 .onAppear {
                     proxy.scrollTo("Content", anchor: .top)
@@ -96,7 +95,7 @@ struct ContentView: View {
 
 struct SearchBar: View {
     @Binding var searchTerm: String
-    let backgroundColor : Color = Color.secondary
+    let backgroundColor : Color = Color.teal
     
     var body: some View {
         VStack(spacing: .zero) {
@@ -124,7 +123,6 @@ struct SearchBar: View {
             .padding()
             .background(backgroundColor)
         }
-        .id("Searchbar")
     }
 }
 
