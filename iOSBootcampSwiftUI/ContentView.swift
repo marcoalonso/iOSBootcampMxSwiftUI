@@ -29,6 +29,10 @@ struct ContentView: View {
         (AnyView(GeometryReaderStacks()), "Geometry Reader Layout", "Simple example of Geometry Reader"),
         (AnyView(AddingMovingRemovingItems()), "Adding Moving And Removing", "Items in the list"),
         (AnyView(SearchItemsList()), "Search items in list", "With searchable and onChange"),
+        (AnyView(AutoScrollListDemo()), "Auto Scroll List", "ScrollView Reader"),
+        (AnyView(SearchItemsList()), "Title", "subtitle"),
+        
+        
         
         
     ]

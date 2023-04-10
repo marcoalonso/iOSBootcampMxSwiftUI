@@ -43,6 +43,20 @@ struct SearchItemsList: View {
                     Text(place.name)
                         .font(.title)
                 }
+                .swipeActions(edge: .leading) {
+                    Button {
+                        print("Delete")
+                    } label: {
+                        Label("Delete", systemImage: "trash")
+                    }.tint(.brown)
+                }
+                .swipeActions(edge: .trailing) {
+                    Button {
+                        print("Add Favorite")
+                    } label: {
+                        Label("Favorite", systemImage: "heart")
+                    }.tint(.red)
+                }
             }.listStyle(.grouped)
                 .searchable(text: $search)
                 .onChange(of: search, perform: { value in
