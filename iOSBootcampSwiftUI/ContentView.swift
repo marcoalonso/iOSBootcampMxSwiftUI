@@ -22,11 +22,14 @@ struct ContentView: View {
     ]
     
     var lists: ExampleViews = [
+        (AnyView(PullToRefreshDemo()), "Pull To Refresh Demo", "Implementing a refreshable"),
         (AnyView(DisplayItemsInList()), "Display Items In List", "Numbers, Custom Objects Indices"),
         (AnyView(FormDemo()), "Form Demo", "Simple form with alert and func to validate"),
         (AnyView(RowStyleInList()), "Row Style in List", "Simple form with alert and func to validate"),
         (AnyView(GeometryReaderStacks()), "Geometry Reader Layout", "Simple example of Geometry Reader"),
         (AnyView(AddingMovingRemovingItems()), "Adding Moving And Removing", "Items in the list"),
+        
+        
         
         
     ]

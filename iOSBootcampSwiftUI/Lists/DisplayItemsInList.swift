@@ -45,6 +45,7 @@ struct DisplayItemsInList: View {
                 }
             }
         }
+        //.listStyle(.grouped)
     }
 }
 
