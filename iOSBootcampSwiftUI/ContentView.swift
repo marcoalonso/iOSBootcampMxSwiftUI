@@ -28,8 +28,7 @@ struct ContentView: View {
         (AnyView(RowStyleInList()), "Row Style in List", "Simple form with alert and func to validate"),
         (AnyView(GeometryReaderStacks()), "Geometry Reader Layout", "Simple example of Geometry Reader"),
         (AnyView(AddingMovingRemovingItems()), "Adding Moving And Removing", "Items in the list"),
-        
-        
+        (AnyView(SearchItemsList()), "Search items in list", "With searchable and onChange"),
         
         
     ]
