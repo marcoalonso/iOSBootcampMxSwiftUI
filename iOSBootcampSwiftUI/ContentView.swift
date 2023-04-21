@@ -48,6 +48,8 @@ struct ContentView: View {
         (AnyView(DragView()), "Drag View",""),
         (AnyView(RotateAnimation3D()), "Rotation 3D View",""),
         (AnyView(SearchItemsList()), "Title", "subtitle"),
+        (AnyView(PassDataFromChildToParent()), "Pass Data with Sheet", "From Child To Parent"),
+        
     ]
     
     var body: some View {

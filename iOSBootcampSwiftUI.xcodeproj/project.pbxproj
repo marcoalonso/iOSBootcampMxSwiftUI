@@ -18,6 +18,8 @@
 		6C3614E429C8DD6F00A593B8 /* PinnedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3614E329C8DD6F00A593B8 /* PinnedViews.swift */; };
 		6C366D9B29D000960001680B /* NavigationProgrammatically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C366D9A29D000960001680B /* NavigationProgrammatically.swift */; };
 		6C366D9D29D001C40001680B /* DetailViewProgramatically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C366D9C29D001C40001680B /* DetailViewProgramatically.swift */; };
+		6C49301829F2EEF600A0FFA9 /* PassDataFromChildToParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C49301729F2EEF600A0FFA9 /* PassDataFromChildToParent.swift */; };
+		6C49301A29F2F50300A0FFA9 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C49301929F2F50300A0FFA9 /* AddItemView.swift */; };
 		6C5BAFBB29D4D24800214CE2 /* BindingImageDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5BAFBA29D4D24800214CE2 /* BindingImageDemo.swift */; };
 		6C5BAFBD29D4D2F800214CE2 /* PassingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5BAFBC29D4D2F800214CE2 /* PassingData.swift */; };
 		6C5BAFBF29D4D3BC00214CE2 /* BindingStringDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5BAFBE29D4D3BC00214CE2 /* BindingStringDemo.swift */; };
@@ -67,6 +69,8 @@
 		6C3614E329C8DD6F00A593B8 /* PinnedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedViews.swift; sourceTree = "<group>"; };
 		6C366D9A29D000960001680B /* NavigationProgrammatically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProgrammatically.swift; sourceTree = "<group>"; };
 		6C366D9C29D001C40001680B /* DetailViewProgramatically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewProgramatically.swift; sourceTree = "<group>"; };
+		6C49301729F2EEF600A0FFA9 /* PassDataFromChildToParent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataFromChildToParent.swift; sourceTree = "<group>"; };
+		6C49301929F2F50300A0FFA9 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		6C5BAFBA29D4D24800214CE2 /* BindingImageDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingImageDemo.swift; sourceTree = "<group>"; };
 		6C5BAFBC29D4D2F800214CE2 /* PassingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassingData.swift; sourceTree = "<group>"; };
 		6C5BAFBE29D4D3BC00214CE2 /* BindingStringDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingStringDemo.swift; sourceTree = "<group>"; };
@@ -149,6 +153,15 @@
 			path = Grids;
 			sourceTree = "<group>";
 		};
+		6C49301629F2EEE700A0FFA9 /* DataFlow */ = {
+			isa = PBXGroup;
+			children = (
+				6C49301729F2EEF600A0FFA9 /* PassDataFromChildToParent.swift */,
+				6C49301929F2F50300A0FFA9 /* AddItemView.swift */,
+			);
+			path = DataFlow;
+			sourceTree = "<group>";
+		};
 		6C5BAFB929D4D22600214CE2 /* PassingData */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +191,7 @@
 		6C711F1529C741C900119283 /* iOSBootcampSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				6C49301629F2EEE700A0FFA9 /* DataFlow */,
 				6C711F1629C741C900119283 /* iOSBootcampSwiftUIApp.swift */,
 				6C711F1829C741C900119283 /* ContentView.swift */,
 				6CFE5FCA29DB3CC000376007 /* Lists */,
@@ -364,11 +378,13 @@
 				6C15CC8A29CE1563003F51B8 /* DetailView.swift in Sources */,
 				6C15CC8C29CE168D003F51B8 /* PassDataFromList.swift in Sources */,
 				6C711F3329C7518F00119283 /* BindingProperties.swift in Sources */,
+				6C49301829F2EEF600A0FFA9 /* PassDataFromChildToParent.swift in Sources */,
 				6C5BAFBD29D4D2F800214CE2 /* PassingData.swift in Sources */,
 				6C15CC8829CE1500003F51B8 /* NavigationButtonClick.swift in Sources */,
 				6C1AA0BB29DD058400B31FD7 /* AddingMovingRemovingItems.swift in Sources */,
 				6C711F3729C7558200119283 /* TextDemo.swift in Sources */,
 				6CBBB25B29DB9693007ABDC4 /* GeometryReaderStacks.swift in Sources */,
+				6C49301A29F2F50300A0FFA9 /* AddItemView.swift in Sources */,
 				6CFF4CE829C92C3200B1DFB9 /* HeroAnimations.swift in Sources */,
 				6C711F2529C74B5800119283 /* Shapes.swift in Sources */,
 			);
