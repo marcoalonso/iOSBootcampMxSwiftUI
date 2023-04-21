@@ -49,7 +49,9 @@ struct ContentView: View {
         (AnyView(RotateAnimation3D()), "Rotation 3D View",""),
         (AnyView(SearchItemsList()), "Title", "subtitle"),
         (AnyView(PassDataFromChildToParent()), "Pass Data with Sheet", "From Child To Parent"),
-        
+        (AnyView(NavigationMultipleViews()), "Navigation to Multiple Views", "Using Navigation View and Navigation Link"),
+        (AnyView(MultipleNavigationValueTypes()), "Multiple Navigation", "Based on Value Types"),
+        (AnyView(AlertsDemo()), "Show Alerts", "Custom alert inside a function"),
     ]
     
     var body: some View {

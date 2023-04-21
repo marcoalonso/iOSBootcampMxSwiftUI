@@ -19,14 +19,14 @@ struct Buttons: View {
             
             // MARK: - Button 1
             Button("Press Me!") {
-                self.title = "Boton presionado!"
+                self.title = "Button (Text) { }"
             }
             .accentColor(.red)
             
             // MARK: - Button 2
             Button {
                 //Action:
-                self.title = "Btn 2 Presionado"
+                self.title = "Buton { 'Action' } label: { }"
             } label: {
                 Text("Boton #2".uppercased())
                     .fontWeight(.heavy)
@@ -40,7 +40,7 @@ struct Buttons: View {
             }
             // MARK: - Button 3
             Button {
-                self.title = "Favorito!"
+                self.title = "Buton { 'Action' } Circle() .overlay()"
             } label: {
                 Circle()
                     .fill(Color.white)
@@ -57,7 +57,7 @@ struct Buttons: View {
             // MARK: - Button 4
             Button {
                 //action:
-                self.title = "Btn 4 Press!"
+                self.title = "Buton { 'Action' } label: { 'Text' Capsule() }!"
             } label: {
                 Text("Finish".lowercased())
                     .font(.caption)
