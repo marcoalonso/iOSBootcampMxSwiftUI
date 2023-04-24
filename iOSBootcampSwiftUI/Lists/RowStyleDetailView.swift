@@ -17,8 +17,12 @@ struct RowStyleDetailView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(maxWidth: 300, maxHeight: 400)
+                    .shadow(radius: 12)
+                
                 Text(item.description)
+                    .font(.title2)
                     .padding()
+                
                 Spacer()
             }
             .navigationBarTitle(item.name)

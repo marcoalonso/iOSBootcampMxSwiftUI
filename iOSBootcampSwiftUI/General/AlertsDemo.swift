@@ -3,15 +3,15 @@
 //  iOSBootcampSwiftUI
 //
 //  Created by Marco Alonso Rodriguez on 21/04/23.
-//
+// Mostrar 3 diferentes alertas y mandarlas llamar en un caso u otro
 
 import SwiftUI
 
 struct AlertsDemo: View {
     
     @State private var alerta1 = false
-        @State private var alerta2 = false
-        @State private var alerta3 = false
+    @State private var alerta2 = false
+    @State private var alerta3 = false
 
     
     

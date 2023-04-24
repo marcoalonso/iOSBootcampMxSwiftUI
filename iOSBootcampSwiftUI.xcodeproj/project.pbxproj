@@ -18,6 +18,8 @@
 		6C3614E429C8DD6F00A593B8 /* PinnedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3614E329C8DD6F00A593B8 /* PinnedViews.swift */; };
 		6C366D9B29D000960001680B /* NavigationProgrammatically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C366D9A29D000960001680B /* NavigationProgrammatically.swift */; };
 		6C366D9D29D001C40001680B /* DetailViewProgramatically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C366D9C29D001C40001680B /* DetailViewProgramatically.swift */; };
+		6C488E9129F6E642006AB99F /* MultipleLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C488E9029F6E642006AB99F /* MultipleLists.swift */; };
+		6C488E9329F6E6C1006AB99F /* MultiDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C488E9229F6E6C1006AB99F /* MultiDetailView.swift */; };
 		6C49301829F2EEF600A0FFA9 /* PassDataFromChildToParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C49301729F2EEF600A0FFA9 /* PassDataFromChildToParent.swift */; };
 		6C49301A29F2F50300A0FFA9 /* AddItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C49301929F2F50300A0FFA9 /* AddItemView.swift */; };
 		6C49302029F3027D00A0FFA9 /* NavigationMultipleViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C49301F29F3027D00A0FFA9 /* NavigationMultipleViews.swift */; };
@@ -74,6 +76,8 @@
 		6C3614E329C8DD6F00A593B8 /* PinnedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedViews.swift; sourceTree = "<group>"; };
 		6C366D9A29D000960001680B /* NavigationProgrammatically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProgrammatically.swift; sourceTree = "<group>"; };
 		6C366D9C29D001C40001680B /* DetailViewProgramatically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewProgramatically.swift; sourceTree = "<group>"; };
+		6C488E9029F6E642006AB99F /* MultipleLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleLists.swift; sourceTree = "<group>"; };
+		6C488E9229F6E6C1006AB99F /* MultiDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiDetailView.swift; sourceTree = "<group>"; };
 		6C49301729F2EEF600A0FFA9 /* PassDataFromChildToParent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataFromChildToParent.swift; sourceTree = "<group>"; };
 		6C49301929F2F50300A0FFA9 /* AddItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddItemView.swift; sourceTree = "<group>"; };
 		6C49301F29F3027D00A0FFA9 /* NavigationMultipleViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationMultipleViews.swift; sourceTree = "<group>"; };
@@ -243,6 +247,8 @@
 				6CA045C529E47D6600194997 /* PullToRefreshDemo.swift */,
 				6CA045C729E4878500194997 /* SearchItemsList.swift */,
 				6CA045C929E490A900194997 /* AutoScrollListDemo.swift */,
+				6C488E9029F6E642006AB99F /* MultipleLists.swift */,
+				6C488E9229F6E6C1006AB99F /* MultiDetailView.swift */,
 			);
 			path = Lists;
 			sourceTree = "<group>";
@@ -358,6 +364,7 @@
 			files = (
 				6CA045CA29E490A900194997 /* AutoScrollListDemo.swift in Sources */,
 				6C711F2D29C750DE00119283 /* Icons.swift in Sources */,
+				6C488E9329F6E6C1006AB99F /* MultiDetailView.swift in Sources */,
 				6CFE5FD129DB477600376007 /* RowStyleInList.swift in Sources */,
 				6C711F1929C741C900119283 /* ContentView.swift in Sources */,
 				6C49302029F3027D00A0FFA9 /* NavigationMultipleViews.swift in Sources */,
@@ -393,6 +400,7 @@
 				6CFF4CED29C9339200B1DFB9 /* MagnifyView.swift in Sources */,
 				6CC2278A29CA7E0F00B52CE1 /* DragView.swift in Sources */,
 				6C711F2929C750B200119283 /* Animation.swift in Sources */,
+				6C488E9129F6E642006AB99F /* MultipleLists.swift in Sources */,
 				6C49302429F3046800A0FFA9 /* ThirdView.swift in Sources */,
 				6C366D9B29D000960001680B /* NavigationProgrammatically.swift in Sources */,
 				6C15CC8A29CE1563003F51B8 /* DetailView.swift in Sources */,

@@ -27,8 +27,27 @@ struct DisplayItemsInList: View {
             // MARK:  Numbers
             Section(header: Text("Numbers")) {
                 ForEach (1...10, id: \.self) { index in
-                    Label("Icon \(index)", systemImage: "laptopcomputer.and.iphone")
+                    
+                    HStack {
+                        Image("espana")
+                            .resizable()
+                            .frame(maxWidth: 100, maxHeight: 100)
+                            .cornerRadius(12)
+                            .shadow(radius: 6)
+                        
+                        VStack {
+                            Text("Image \(index)")
+                                .font(.title2)
+                            
+                            Label("Icon #\(index)", systemImage: "star")
+                                .font(.title3)
+                                .foregroundColor(.purple)
+                        }
+                        
+                    }
+                    
                 }
+                
             }
             
             // MARK:  Objects
@@ -45,7 +64,10 @@ struct DisplayItemsInList: View {
                 }
             }
         }
-        //.listStyle(.grouped)
+        .onTapGesture {
+            print("Tapp")
+        }
+        .listStyle(.insetGrouped)
     }
 }
 
