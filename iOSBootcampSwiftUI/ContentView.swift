@@ -52,6 +52,9 @@ struct ContentView: View {
         (AnyView(MultipleNavigationValueTypes()), "Multiple Navigation", "Based on Value Types"),
         (AnyView(AlertsDemo()), "Show Alerts", "Custom alert inside a function"),
         (AnyView(MultipleLists()), "Multiple Lists", "Two list same destination"),
+        (AnyView(FullScreenCoverDemo()), "Navigation with FullScreenCover", "Using Binding and Picker"),
+        (AnyView(NavigationStackAndSheet()), "Navigation with sheet and NavigationView", "Adding Toolbar items in detail view"),
+        
     ]
     
     var body: some View {

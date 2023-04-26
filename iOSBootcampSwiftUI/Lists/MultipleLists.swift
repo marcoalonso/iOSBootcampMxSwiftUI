@@ -26,8 +26,12 @@ struct MultipleLists: View {
                         
                         List(fruits, id: \.self) { fruit in
                             NavigationLink(destination: MultiDetailView(itemName: fruit, itemType: "Fruta")) {
-                                Text(fruit)
-                                    .font(.title)
+                                HStack {
+                                    Image(systemName: "carrot")
+                                    
+                                    Text(fruit)
+                                        .font(.title)
+                                }
                             }
                         }
                         .frame(height: 300)
@@ -64,8 +68,19 @@ struct MultipleLists: View {
                                 
                         List(platillos, id: \.self) { platillo in
                             NavigationLink(destination: MultiDetailView(itemName: platillo, itemType: "Platillo")) {
-                                Text(platillo)
-                                    .font(.title2)
+                                
+                                
+                                HStack {
+                                    Image(systemName: "fork.knife.circle")
+                                    
+                                    Text(platillo)
+                                        .font(.title2)
+                                }
+                                
+                                
+                                
+                               
+                                
                             }
                         }
                         .frame(height: 200)
