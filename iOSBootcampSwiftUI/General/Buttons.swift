@@ -12,7 +12,7 @@ struct Buttons: View {
     @State private var title: String = "Hola Mundo"
     
     var body: some View {
-        VStack(spacing: 40) {
+        VStack(spacing: 20) {
             
             Text(title)
                 .font(.largeTitle)

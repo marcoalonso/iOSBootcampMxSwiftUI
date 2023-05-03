@@ -55,6 +55,8 @@ struct ContentView: View {
         (AnyView(FullScreenCoverDemo()), "Navigation with FullScreenCover", "Using Binding and Picker"),
         (AnyView(NavigationStackAndSheet()), "Navigation with sheet and NavigationView", "Adding Toolbar items in detail view"),
         
+        
+        (AnyView(SegmentedControlDemo()), "Segmented Controls", "Different Styles"),
     ]
     
     var body: some View {
