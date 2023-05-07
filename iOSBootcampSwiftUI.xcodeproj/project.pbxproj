@@ -46,6 +46,9 @@
 		6C711F3529C7535C00119283 /* Grids.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C711F3429C7535C00119283 /* Grids.swift */; };
 		6C711F3729C7558200119283 /* TextDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C711F3629C7558200119283 /* TextDemo.swift */; };
 		6C711F3929C7575700119283 /* ScrollViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C711F3829C7575700119283 /* ScrollViewDemo.swift */; };
+		6C8A356B2A08262D00691433 /* TaskListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A356A2A08262D00691433 /* TaskListView.swift */; };
+		6C8A356E2A08267500691433 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A356C2A08267500691433 /* Task.swift */; };
+		6C8A356F2A08267500691433 /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8A356D2A08267500691433 /* TaskList.swift */; };
 		6C8B0F472A02098600E29FF5 /* SegmentedControlDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8B0F462A02098600E29FF5 /* SegmentedControlDemo.swift */; };
 		6C8EB18E29F34BA100AE7BCE /* AlertsDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8EB18D29F34BA100AE7BCE /* AlertsDemo.swift */; };
 		6C9ED13529F8D30A00B6076A /* NavigationStackAndSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9ED13429F8D30A00B6076A /* NavigationStackAndSheet.swift */; };
@@ -110,6 +113,9 @@
 		6C711F3429C7535C00119283 /* Grids.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grids.swift; sourceTree = "<group>"; };
 		6C711F3629C7558200119283 /* TextDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDemo.swift; sourceTree = "<group>"; };
 		6C711F3829C7575700119283 /* ScrollViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewDemo.swift; sourceTree = "<group>"; };
+		6C8A356A2A08262D00691433 /* TaskListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListView.swift; sourceTree = "<group>"; };
+		6C8A356C2A08267500691433 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		6C8A356D2A08267500691433 /* TaskList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 		6C8B0F462A02098600E29FF5 /* SegmentedControlDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControlDemo.swift; sourceTree = "<group>"; };
 		6C8EB18D29F34BA100AE7BCE /* AlertsDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsDemo.swift; sourceTree = "<group>"; };
 		6C9ED13429F8D30A00B6076A /* NavigationStackAndSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackAndSheet.swift; sourceTree = "<group>"; };
@@ -223,6 +229,7 @@
 		6C711F1529C741C900119283 /* iOSBootcampSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				6C8A35692A0825FD00691433 /* PropertyWrappers */,
 				6C49301629F2EEE700A0FFA9 /* DataFlow */,
 				6C711F1629C741C900119283 /* iOSBootcampSwiftUIApp.swift */,
 				6C711F1829C741C900119283 /* ContentView.swift */,
@@ -246,6 +253,16 @@
 				6C711F1D29C741CB00119283 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6C8A35692A0825FD00691433 /* PropertyWrappers */ = {
+			isa = PBXGroup;
+			children = (
+				6C8A356C2A08267500691433 /* Task.swift */,
+				6C8A356D2A08267500691433 /* TaskList.swift */,
+				6C8A356A2A08262D00691433 /* TaskListView.swift */,
+			);
+			path = PropertyWrappers;
 			sourceTree = "<group>";
 		};
 		6CFE5FCA29DB3CC000376007 /* Lists */ = {
@@ -412,6 +429,7 @@
 				6C711F2F29C750F200119283 /* Images.swift in Sources */,
 				6C18FD4729CE61610087FCBE /* ModalWindow.swift in Sources */,
 				6CFE5FCC29DB3CD900376007 /* DisplayItemsInList.swift in Sources */,
+				6C8A356F2A08267500691433 /* TaskList.swift in Sources */,
 				6C9ED13529F8D30A00B6076A /* NavigationStackAndSheet.swift in Sources */,
 				6C711F3929C7575700119283 /* ScrollViewDemo.swift in Sources */,
 				6C711F3129C7514F00119283 /* Backgrounds&Overlays.swift in Sources */,
@@ -421,6 +439,7 @@
 				6C488E9129F6E642006AB99F /* MultipleLists.swift in Sources */,
 				6C49302429F3046800A0FFA9 /* ThirdView.swift in Sources */,
 				6C366D9B29D000960001680B /* NavigationProgrammatically.swift in Sources */,
+				6C8A356B2A08262D00691433 /* TaskListView.swift in Sources */,
 				6C15CC8A29CE1563003F51B8 /* DetailView.swift in Sources */,
 				6C15CC8C29CE168D003F51B8 /* PassDataFromList.swift in Sources */,
 				6C711F3329C7518F00119283 /* BindingProperties.swift in Sources */,
@@ -428,6 +447,7 @@
 				6C49301829F2EEF600A0FFA9 /* PassDataFromChildToParent.swift in Sources */,
 				6C5BAFBD29D4D2F800214CE2 /* PassingData.swift in Sources */,
 				6C9ED13729F8D46100B6076A /* DetailSheetView.swift in Sources */,
+				6C8A356E2A08267500691433 /* Task.swift in Sources */,
 				6C15CC8829CE1500003F51B8 /* NavigationButtonClick.swift in Sources */,
 				6C1AA0BB29DD058400B31FD7 /* AddingMovingRemovingItems.swift in Sources */,
 				6C711F3729C7558200119283 /* TextDemo.swift in Sources */,
