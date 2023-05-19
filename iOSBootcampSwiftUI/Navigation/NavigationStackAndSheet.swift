@@ -34,6 +34,11 @@ struct NavigationStackAndSheet: View {
                 NavigationView {
                     DetailSheetView()
                 }
+                .presentationDetents([.height(400), .medium, .large])
+                .presentationDragIndicator(.visible)
+                .presentationBackgroundInteraction(.enabled)
+                .presentationBackground(.ultraThinMaterial)
+                .presentationCornerRadius(20)
             }
         }
     }

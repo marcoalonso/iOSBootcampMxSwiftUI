@@ -38,7 +38,7 @@ struct ContentView: View {
         (AnyView(Colors()), "Colors","RadialGradient, AngularGradient and Gradient"),
         (AnyView(Buttons()), "Buttons",""),
         (AnyView(HeroAnimations()), "Animation Geometry",""),
-        (AnyView(NamespaceDemo()), "NamespaceDemo",""),
+        (AnyView(OnChangeModifierDemo()), "OnChange Modifier Demo","Background Color"),
         (AnyView(Shapes()), "Shapes",""),
         (AnyView(Animation()), "Animation",""),
         (AnyView(Icons()), "Icons",""),
