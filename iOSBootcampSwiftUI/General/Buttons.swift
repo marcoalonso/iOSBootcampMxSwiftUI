@@ -71,6 +71,17 @@ struct Buttons: View {
                     )
             }
 
+            Button {
+                title = "Simple Button"
+            } label: {
+                Text("Aceptar".uppercased())
+                    .padding(11)
+                    .foregroundColor(.white)
+                    .background(Color.black)
+                    .cornerRadius(12)
+                
+            }
+
         }
     }
 }

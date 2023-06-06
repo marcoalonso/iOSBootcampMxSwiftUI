@@ -38,7 +38,7 @@ struct ContentView: View {
         (AnyView(Colors()), "Colors","RadialGradient, AngularGradient and Gradient"),
         (AnyView(Buttons()), "Buttons",""),
         (AnyView(HeroAnimations()), "Animation Geometry",""),
-        (AnyView(OnChangeModifierDemo()), "OnChange Modifier Demo","Background Color"),
+        (AnyView(OnChangeModifierDemo()), "OnChange & AppStorage ","Changing Background with AppStorage"),
         (AnyView(Shapes()), "Shapes",""),
         (AnyView(Animation()), "Animation",""),
         (AnyView(Icons()), "Icons",""),
@@ -57,6 +57,7 @@ struct ContentView: View {
         
         (AnyView(TaskListView()), "Task List View", "ObservedObject , ObservableObject, Published"),
         (AnyView(SegmentedControlDemo()), "Segmented Controls", "Different Styles"),
+        (AnyView(AlertItemDemo()), "Alert Item Demo", "Differents Alerts"),
     ]
     
     var body: some View {

@@ -9,7 +9,8 @@ import SwiftUI
 
 struct OnChangeModifierDemo: View {
     
-    @State private var isLightOn: Bool = false
+//    @State private var isLightOn: Bool = false
+    @AppStorage("$isLightOn") private var isLightOn: Bool = false
     
     var body: some View {
         ZStack {
@@ -17,6 +18,10 @@ struct OnChangeModifierDemo: View {
                 .font(.largeTitle)
                 .foregroundColor(isLightOn ? .black : .white)
                 .onChange(of: isLightOn) { newValue in
+                    //Vibracion
+                    let generator = UINotificationFeedbackGenerator()
+                    generator.notificationOccurred(.warning)
+                    
                     if newValue {
                         print("Light On")
                             
