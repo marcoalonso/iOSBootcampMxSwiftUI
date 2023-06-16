@@ -58,6 +58,7 @@ struct ContentView: View {
         (AnyView(TaskListView()), "Task List View", "ObservedObject , ObservableObject, Published"),
         (AnyView(SegmentedControlDemo()), "Segmented Controls", "Different Styles"),
         (AnyView(AlertItemDemo()), "Alert Item Demo", "Differents Alerts"),
+        (AnyView(SearchbarDemo()), "Search Bar", "With async await from API"),
     ]
     
     var body: some View {
