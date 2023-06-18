@@ -59,6 +59,7 @@ struct ContentView: View {
         (AnyView(SegmentedControlDemo()), "Segmented Controls", "Different Styles"),
         (AnyView(AlertItemDemo()), "Alert Item Demo", "Differents Alerts"),
         (AnyView(SearchbarDemo()), "Search Bar", "With async await from API"),
+        (AnyView(WebViewDemo()), "WebView", "Using Webkit with UIViewRepresentable"),
     ]
     
     var body: some View {
