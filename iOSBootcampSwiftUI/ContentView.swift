@@ -60,6 +60,7 @@ struct ContentView: View {
         (AnyView(AlertItemDemo()), "Alert Item Demo", "Differents Alerts"),
         (AnyView(SearchbarDemo()), "Search Bar", "With async await from API"),
         (AnyView(WebViewDemo()), "WebView", "Using Webkit with UIViewRepresentable"),
+        (AnyView(TabViewDemo()), "TabViewDemo", "Using 5 ways of backgrounds"),
     ]
     
     var body: some View {
