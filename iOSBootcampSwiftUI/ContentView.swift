@@ -62,6 +62,7 @@ struct ContentView: View {
         (AnyView(WebViewDemo()), "WebView", "Using Webkit with UIViewRepresentable"),
         (AnyView(TabViewDemo()), "TabViewDemo", "Using 5 ways of backgrounds"),
         (AnyView(LazyHGridDemo()), "LazyHGrid", "Similar to Horizontal CollectionView"),
+        (AnyView(SafariServicesDemo()), "Safari Services", "And Link to open Safari Browser"),
     ]
     
     var body: some View {
