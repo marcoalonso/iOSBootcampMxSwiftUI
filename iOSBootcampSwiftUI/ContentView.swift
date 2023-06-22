@@ -61,6 +61,7 @@ struct ContentView: View {
         (AnyView(SearchbarDemo()), "Search Bar", "With async await from API"),
         (AnyView(WebViewDemo()), "WebView", "Using Webkit with UIViewRepresentable"),
         (AnyView(TabViewDemo()), "TabViewDemo", "Using 5 ways of backgrounds"),
+        (AnyView(LazyHGridDemo()), "LazyHGrid", "Similar to Horizontal CollectionView"),
     ]
     
     var body: some View {

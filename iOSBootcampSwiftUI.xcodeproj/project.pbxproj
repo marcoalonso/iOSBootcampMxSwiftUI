@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C0172A72A44015700691FBC /* LazyHGridDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0172A62A44015700691FBC /* LazyHGridDemo.swift */; };
 		6C12AF422A3EC9B80006D2E3 /* WebViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C12AF412A3EC9B80006D2E3 /* WebViewDemo.swift */; };
 		6C15CC8829CE1500003F51B8 /* NavigationButtonClick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C15CC8729CE1500003F51B8 /* NavigationButtonClick.swift */; };
 		6C15CC8A29CE1563003F51B8 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C15CC8929CE1563003F51B8 /* DetailView.swift */; };
@@ -84,6 +85,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6C0172A62A44015700691FBC /* LazyHGridDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyHGridDemo.swift; sourceTree = "<group>"; };
 		6C12AF412A3EC9B80006D2E3 /* WebViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewDemo.swift; sourceTree = "<group>"; };
 		6C15CC8729CE1500003F51B8 /* NavigationButtonClick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButtonClick.swift; sourceTree = "<group>"; };
 		6C15CC8929CE1563003F51B8 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 		6C3614E529C8DD7500A593B8 /* Grids */ = {
 			isa = PBXGroup;
 			children = (
+				6C0172A62A44015700691FBC /* LazyHGridDemo.swift */,
 				6C711F3429C7535C00119283 /* Grids.swift */,
 				6C3614E329C8DD6F00A593B8 /* PinnedViews.swift */,
 			);
@@ -505,6 +508,7 @@
 				6C49302429F3046800A0FFA9 /* ThirdView.swift in Sources */,
 				6C366D9B29D000960001680B /* NavigationProgrammatically.swift in Sources */,
 				6C8A356B2A08262D00691433 /* TaskListView.swift in Sources */,
+				6C0172A72A44015700691FBC /* LazyHGridDemo.swift in Sources */,
 				6C15CC8A29CE1563003F51B8 /* DetailView.swift in Sources */,
 				6C15CC8C29CE168D003F51B8 /* PassDataFromList.swift in Sources */,
 				6C711F3329C7518F00119283 /* BindingProperties.swift in Sources */,
