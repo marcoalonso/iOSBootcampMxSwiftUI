@@ -11,6 +11,7 @@ import SafariServices
 struct SafariServicesDemo: View {
     
     @State var showSS = false
+    @State var urlToShow = "https://www.linkedin.com/company/ios-bootcamp-mx"
     
     var body: some View {
         NavigationView {
@@ -44,7 +45,7 @@ struct SafariServicesDemo: View {
                 
             }
             .sheet(isPresented: $showSS) {
-                safari(urlString: "https://apple.com")
+                safari(urlString: $urlToShow)
             }
         }
     }
@@ -58,8 +59,8 @@ struct SafariServicesDemo_Previews: PreviewProvider {
 
 struct safari : UIViewControllerRepresentable {
     
-    var urlString: String
-    
+    @Binding var urlString: String
+
     func makeUIViewController(context: UIViewControllerRepresentableContext<safari>) -> SFSafariViewController {
         let controller = SFSafariViewController(url: URL(string: urlString)!)
         return controller

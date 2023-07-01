@@ -63,6 +63,7 @@ struct ContentView: View {
         (AnyView(TabViewDemo()), "TabViewDemo", "Using 5 ways of backgrounds"),
         (AnyView(LazyHGridDemo()), "LazyHGrid", "Similar to Horizontal CollectionView"),
         (AnyView(SafariServicesDemo()), "Safari Services", "And Link to open Safari Browser"),
+        (AnyView(FeedbackView()), "Feedback View", "Using sheet and Safari Services to show")
     ]
     
     var body: some View {
