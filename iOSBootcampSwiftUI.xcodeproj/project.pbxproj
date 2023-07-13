@@ -17,6 +17,8 @@
 		6C18FD4A29CE65000087FCBE /* ObservedObjectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C18FD4929CE65000087FCBE /* ObservedObjectDemo.swift */; };
 		6C18FD4C29CE65270087FCBE /* ModeloDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C18FD4B29CE65270087FCBE /* ModeloDemo.swift */; };
 		6C1AA0BB29DD058400B31FD7 /* AddingMovingRemovingItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1AA0BA29DD058400B31FD7 /* AddingMovingRemovingItems.swift */; };
+		6C2EA3632A606479006E08C8 /* TextFieldModifiersDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2EA3622A606479006E08C8 /* TextFieldModifiersDemo.swift */; };
+		6C2EA3652A6064D5006E08C8 /* IGTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C2EA3642A6064D4006E08C8 /* IGTextFieldModifier.swift */; };
 		6C3614E429C8DD6F00A593B8 /* PinnedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3614E329C8DD6F00A593B8 /* PinnedViews.swift */; };
 		6C366D9B29D000960001680B /* NavigationProgrammatically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C366D9A29D000960001680B /* NavigationProgrammatically.swift */; };
 		6C366D9D29D001C40001680B /* DetailViewProgramatically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C366D9C29D001C40001680B /* DetailViewProgramatically.swift */; };
@@ -99,6 +101,8 @@
 		6C18FD4929CE65000087FCBE /* ObservedObjectDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObjectDemo.swift; sourceTree = "<group>"; };
 		6C18FD4B29CE65270087FCBE /* ModeloDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeloDemo.swift; sourceTree = "<group>"; };
 		6C1AA0BA29DD058400B31FD7 /* AddingMovingRemovingItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddingMovingRemovingItems.swift; sourceTree = "<group>"; };
+		6C2EA3622A606479006E08C8 /* TextFieldModifiersDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifiersDemo.swift; sourceTree = "<group>"; };
+		6C2EA3642A6064D4006E08C8 /* IGTextFieldModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGTextFieldModifier.swift; sourceTree = "<group>"; };
 		6C3614E329C8DD6F00A593B8 /* PinnedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedViews.swift; sourceTree = "<group>"; };
 		6C366D9A29D000960001680B /* NavigationProgrammatically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProgrammatically.swift; sourceTree = "<group>"; };
 		6C366D9C29D001C40001680B /* DetailViewProgramatically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewProgramatically.swift; sourceTree = "<group>"; };
@@ -215,6 +219,15 @@
 			path = Combine;
 			sourceTree = "<group>";
 		};
+		6C2EA3612A606472006E08C8 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				6C2EA3642A6064D4006E08C8 /* IGTextFieldModifier.swift */,
+				6C2EA3622A606479006E08C8 /* TextFieldModifiersDemo.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
 		6C3614E529C8DD7500A593B8 /* Grids */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,6 +308,7 @@
 		6C711F1529C741C900119283 /* iOSBootcampSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				6C2EA3612A606472006E08C8 /* TextFields */,
 				6C50D8FC2A4FF373004AB421 /* Feedback */,
 				6C8A35692A0825FD00691433 /* PropertyWrappers */,
 				6C49301629F2EEE700A0FFA9 /* DataFlow */,
@@ -487,6 +501,7 @@
 				6C3614E429C8DD6F00A593B8 /* PinnedViews.swift in Sources */,
 				6C50D9022A4FF3DF004AB421 /* ActivityView.swift in Sources */,
 				6CFE5FD529DB4D2800376007 /* GeometryReaderDemo.swift in Sources */,
+				6C2EA3652A6064D5006E08C8 /* IGTextFieldModifier.swift in Sources */,
 				6C18FD4A29CE65000087FCBE /* ObservedObjectDemo.swift in Sources */,
 				6C572D1F2A40273A004B1D1F /* BacgroundDemo3.swift in Sources */,
 				6CA045C629E47D6600194997 /* PullToRefreshDemo.swift in Sources */,
@@ -541,6 +556,7 @@
 				6C5BAFBD29D4D2F800214CE2 /* PassingData.swift in Sources */,
 				6C9ED13729F8D46100B6076A /* DetailSheetView.swift in Sources */,
 				6C8A356E2A08267500691433 /* Task.swift in Sources */,
+				6C2EA3632A606479006E08C8 /* TextFieldModifiersDemo.swift in Sources */,
 				6C572D182A4026D5004B1D1F /* BacgroundDemo1.swift in Sources */,
 				6C15CC8829CE1500003F51B8 /* NavigationButtonClick.swift in Sources */,
 				6C1AA0BB29DD058400B31FD7 /* AddingMovingRemovingItems.swift in Sources */,
