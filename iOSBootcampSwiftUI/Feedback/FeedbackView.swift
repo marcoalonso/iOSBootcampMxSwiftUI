@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FeedbackView: View {
+    @AppStorage("isDarkModeOn") private var isDarkModeOn = false
     
     @State var isShowingActivityView = false
     @State var urlToShow = ""
@@ -30,7 +31,21 @@ struct FeedbackView: View {
                     }.padding(12)
                 }
             }.listStyle(.plain)
-                .frame(height: 400)
+                .frame(height: 300)
+            
+            Divider()
+            
+            HStack {
+                Toggle(isOn: $isDarkModeOn) {
+                    Text("Dark mode")
+                }
+                .onChange(of: isDarkModeOn) { _ in
+                    print("changed")
+                }
+                .padding(15)
+            }.padding(.horizontal)
+            
+            Divider()
             
             Spacer()
             
