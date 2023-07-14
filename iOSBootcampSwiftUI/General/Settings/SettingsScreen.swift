@@ -38,13 +38,24 @@ struct SettingsScreen: View {
                     }
                     ///Send email
                     Button {
-                        print("Send email")
+                        self.presentMailCompose()
                     } label: {
                         HStack {
                             Image(systemName: "mail")
                             Text("Send an email")
                         }
                     }
+                    
+                    ///Send email
+                    Button {
+                        self.presentMessageCompose()
+                    } label: {
+                        HStack {
+                            Image(systemName: "message")
+                            Text("Send an message text")
+                        }
+                    }
+                    
                     ///Sugestion
                     Link(destination: URL(string: "https://forms.gle/guA95kfHXphQHgbx5")!) {
                         HStack {
@@ -78,6 +89,21 @@ struct SettingsScreen: View {
                         HStack {
                             Image(systemName: "play.display")
                             Text("YouTube Channel")
+                        }
+                    }
+                    ///iOS Bootcamp Mx
+                    ///
+                    Link(destination: URL(string: "https://mx.linkedin.com/company/ios-bootcamp-mx?trk=public_post_reshare_feed-actor-name")!) {
+                        HStack {
+                            Image(systemName: "apps.iphone")
+                            Text("iOS Bootcamp Mx - LinkedIn")
+                        }
+                    }
+                    
+                    Link(destination: URL(string: "https://www.facebook.com/people/IOS-Bootcamp-Mx/100090332195526/")!) {
+                        HStack {
+                            Image(systemName: "apps.iphone")
+                            Text("iOS Bootcamp Mx - Facebook")
                         }
                     }
                   
