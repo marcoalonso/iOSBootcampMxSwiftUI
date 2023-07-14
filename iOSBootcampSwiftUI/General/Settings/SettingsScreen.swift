@@ -56,7 +56,7 @@ struct SettingsScreen: View {
                     }
                 } header: {
                     HStack {
-                        Text("Contacto")
+                        Text("Contact")
                     }.padding(12)
                 }//Section
                 
