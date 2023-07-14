@@ -64,7 +64,8 @@ struct ContentView: View {
         (AnyView(LazyHGridDemo()), "LazyHGrid", "Similar to Horizontal CollectionView"),
         (AnyView(SafariServicesDemo()), "Safari Services", "And Link to open Safari Browser"),
         (AnyView(FeedbackView()), "Feedback View and Dark Mode", "Using sheet and Safari Services to show"),
-        (AnyView(TextFieldModifiersDemo()), "TextField in LoginView", "Using modifiers and divider")
+        (AnyView(TextFieldModifiersDemo()), "TextField in LoginView", "Using modifiers and divider"),
+        (AnyView(SettingsScreen()), "Settings Screen", "Using Form, Header, footer and Sections")
     ]
     
     var body: some View {
