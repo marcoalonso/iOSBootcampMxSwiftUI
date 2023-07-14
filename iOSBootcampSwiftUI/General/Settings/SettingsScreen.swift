@@ -12,6 +12,12 @@ struct SettingsScreen: View {
     @State private var mostrarAlerta = false
     @AppStorage("isDarkModeOn") private var isDarkModeOn = false
     
+    /// The delegate required by `MFMailComposeViewController`
+    private let mailComposeDelegate = MailDelegate()
+
+    /// The delegate required by `MFMessageComposeViewController`
+    private let messageComposeDelegate = MessageDelegate()
+    
     let phoneNumber = "4432282860"
     
     var body: some View {
@@ -121,5 +127,61 @@ struct SettingsScreen: View {
 struct SettingsScreen_Previews: PreviewProvider {
     static var previews: some View {
         SettingsScreen()
+    }
+}
+
+extension SettingsScreen {
+
+    /// Delegate for view controller as `MFMailComposeViewControllerDelegate`
+    private class MailDelegate: NSObject, MFMailComposeViewControllerDelegate {
+
+        func mailComposeController(_ controller: MFMailComposeViewController,
+                                   didFinishWith result: MFMailComposeResult,
+                                   error: Error?) {
+            // Customize here
+            controller.dismiss(animated: true)
+        }
+
+    }
+
+    /// Present an mail compose view controller modally in UIKit environment
+    private func presentMailCompose() {
+        guard MFMailComposeViewController.canSendMail() else {
+            return
+        }
+        let vc = UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.rootViewController
+
+        let composeVC = MFMailComposeViewController()
+        composeVC.mailComposeDelegate = mailComposeDelegate
+        composeVC.setToRecipients(["marcoalonsoiosdeveloper@gmail.com"])
+        composeVC.setSubject("Quiero hacer una sugerencia")
+        composeVC.setMessageBody("Me gustaría ...", isHTML: false)
+        vc?.present(composeVC, animated: true)
+    }
+}
+
+extension SettingsScreen {
+
+    /// Delegate for view controller as `MFMessageComposeViewControllerDelegate`
+    private class MessageDelegate: NSObject, MFMessageComposeViewControllerDelegate {
+        func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
+            // Customize here
+            controller.dismiss(animated: true)
+        }
+
+    }
+
+    /// Present an message compose view controller modally in UIKit environment
+    private func presentMessageCompose() {
+        guard MFMessageComposeViewController.canSendText() else {
+            return
+        }
+        let vc = UIApplication.shared.windows.filter {$0.isKeyWindow}.first?.rootViewController
+
+        let composeVC = MFMessageComposeViewController()
+        composeVC.messageComposeDelegate = messageComposeDelegate
+        composeVC.recipients = ["4432282860"]
+        composeVC.body = "I would like to ..."
+        vc?.present(composeVC, animated: true)
     }
 }
