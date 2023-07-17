@@ -67,6 +67,7 @@ struct ContentView: View {
         (AnyView(TextFieldModifiersDemo()), "TextField in LoginView", "Using modifiers and divider"),
         (AnyView(SettingsScreen()), "Settings Screen", "Using Form, Header, footer and Sections"),
         (AnyView(SendEmailDemo()), "Send Email Demo", "Using MessageUI and extensions"),
+        (AnyView(PhotosUIDemo()), "PhotosUI", "Image Picker Controller"),
         
     ]
     

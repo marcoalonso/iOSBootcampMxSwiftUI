@@ -9,7 +9,7 @@ import Foundation
 
 ///- * Esta clase  representa una tarea individual, @Published de la propiedad isCompleted  permite a la vista TaskListView observar y actualizar automáticamente los cambios en el estado de completado de cada tarea individual.
 
-class Task: Identifiable {
+class TaskDemo: Identifiable {
     var id = UUID()
     var title: String
     @Published var isCompleted: Bool
