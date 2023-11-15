@@ -52,7 +52,7 @@ struct SettingsScreen: View {
                     } label: {
                         HStack {
                             Image(systemName: "message")
-                            Text("Send an message text")
+                            Text("Send a text message ")
                         }
                     }
                     

@@ -12,6 +12,8 @@
 		6C15CC8829CE1500003F51B8 /* NavigationButtonClick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C15CC8729CE1500003F51B8 /* NavigationButtonClick.swift */; };
 		6C15CC8A29CE1563003F51B8 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C15CC8929CE1563003F51B8 /* DetailView.swift */; };
 		6C15CC8C29CE168D003F51B8 /* PassDataFromList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C15CC8B29CE168C003F51B8 /* PassDataFromList.swift */; };
+		6C1655552A685D4900B84D0F /* CustomSearchBarDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1655542A685D4900B84D0F /* CustomSearchBarDemo.swift */; };
+		6C1655572A685D9900B84D0F /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1655562A685D9900B84D0F /* SearchBarView.swift */; };
 		6C18FD4529CE60F40087FCBE /* ModalSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C18FD4429CE60F40087FCBE /* ModalSheet.swift */; };
 		6C18FD4729CE61610087FCBE /* ModalWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C18FD4629CE61610087FCBE /* ModalWindow.swift */; };
 		6C18FD4A29CE65000087FCBE /* ObservedObjectDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C18FD4929CE65000087FCBE /* ObservedObjectDemo.swift */; };
@@ -23,6 +25,7 @@
 		6C3614E429C8DD6F00A593B8 /* PinnedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3614E329C8DD6F00A593B8 /* PinnedViews.swift */; };
 		6C366D9B29D000960001680B /* NavigationProgrammatically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C366D9A29D000960001680B /* NavigationProgrammatically.swift */; };
 		6C366D9D29D001C40001680B /* DetailViewProgramatically.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C366D9C29D001C40001680B /* DetailViewProgramatically.swift */; };
+		6C3757482B052394003C4243 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3757472B052394003C4243 /* MainTabView.swift */; };
 		6C488E9129F6E642006AB99F /* MultipleLists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C488E9029F6E642006AB99F /* MultipleLists.swift */; };
 		6C488E9329F6E6C1006AB99F /* MultiDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C488E9229F6E6C1006AB99F /* MultiDetailView.swift */; };
 		6C488EB929F711E9006AB99F /* FullScreenCoverDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C488EB829F711E9006AB99F /* FullScreenCoverDemo.swift */; };
@@ -100,6 +103,8 @@
 		6C15CC8729CE1500003F51B8 /* NavigationButtonClick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationButtonClick.swift; sourceTree = "<group>"; };
 		6C15CC8929CE1563003F51B8 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		6C15CC8B29CE168C003F51B8 /* PassDataFromList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassDataFromList.swift; sourceTree = "<group>"; };
+		6C1655542A685D4900B84D0F /* CustomSearchBarDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBarDemo.swift; sourceTree = "<group>"; };
+		6C1655562A685D9900B84D0F /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		6C18FD4429CE60F40087FCBE /* ModalSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSheet.swift; sourceTree = "<group>"; };
 		6C18FD4629CE61610087FCBE /* ModalWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalWindow.swift; sourceTree = "<group>"; };
 		6C18FD4929CE65000087FCBE /* ObservedObjectDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObjectDemo.swift; sourceTree = "<group>"; };
@@ -111,6 +116,7 @@
 		6C3614E329C8DD6F00A593B8 /* PinnedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinnedViews.swift; sourceTree = "<group>"; };
 		6C366D9A29D000960001680B /* NavigationProgrammatically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationProgrammatically.swift; sourceTree = "<group>"; };
 		6C366D9C29D001C40001680B /* DetailViewProgramatically.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewProgramatically.swift; sourceTree = "<group>"; };
+		6C3757472B052394003C4243 /* MainTabView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		6C488E9029F6E642006AB99F /* MultipleLists.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleLists.swift; sourceTree = "<group>"; };
 		6C488E9229F6E6C1006AB99F /* MultiDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiDetailView.swift; sourceTree = "<group>"; };
 		6C488EB829F711E9006AB99F /* FullScreenCoverDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCoverDemo.swift; sourceTree = "<group>"; };
@@ -269,6 +275,7 @@
 		6C572D152A4026C4004B1D1F /* TabViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				6C3757472B052394003C4243 /* MainTabView.swift */,
 				6C572D1C2A40273A004B1D1F /* BacgroundDemo3.swift */,
 				6C572D1A2A40273A004B1D1F /* BacgroundDemo4.swift */,
 				6C572D1B2A40273A004B1D1F /* BacgroundDemo5.swift */,
@@ -371,6 +378,8 @@
 			children = (
 				6CC8D7B52A3CD97B00D49910 /* SearchbarDemo.swift */,
 				6CC8D7B82A3CD9C200D49910 /* UserModel.swift */,
+				6C1655542A685D4900B84D0F /* CustomSearchBarDemo.swift */,
+				6C1655562A685D9900B84D0F /* SearchBarView.swift */,
 			);
 			path = Searchbar;
 			sourceTree = "<group>";
@@ -531,6 +540,7 @@
 				6C50D9022A4FF3DF004AB421 /* ActivityView.swift in Sources */,
 				6CFE5FD529DB4D2800376007 /* GeometryReaderDemo.swift in Sources */,
 				6C2EA3652A6064D5006E08C8 /* IGTextFieldModifier.swift in Sources */,
+				6C1655572A685D9900B84D0F /* SearchBarView.swift in Sources */,
 				6C18FD4A29CE65000087FCBE /* ObservedObjectDemo.swift in Sources */,
 				6C572D1F2A40273A004B1D1F /* BacgroundDemo3.swift in Sources */,
 				6CA045C629E47D6600194997 /* PullToRefreshDemo.swift in Sources */,
@@ -554,6 +564,7 @@
 				6C572D1E2A40273A004B1D1F /* BacgroundDemo5.swift in Sources */,
 				6C711F2B29C750C700119283 /* Buttons.swift in Sources */,
 				6CFE5FD329DB47D800376007 /* RowStyleDetailView.swift in Sources */,
+				6C3757482B052394003C4243 /* MainTabView.swift in Sources */,
 				6C49302829F307CB00A0FFA9 /* MultipleNavigationValueTypes.swift in Sources */,
 				6C5BAFBF29D4D3BC00214CE2 /* BindingStringDemo.swift in Sources */,
 				6C572D1D2A40273A004B1D1F /* BacgroundDemo4.swift in Sources */,
@@ -595,6 +606,7 @@
 				6CBBB25B29DB9693007ABDC4 /* GeometryReaderStacks.swift in Sources */,
 				6C49301A29F2F50300A0FFA9 /* AddItemView.swift in Sources */,
 				6CFF4CE829C92C3200B1DFB9 /* HeroAnimations.swift in Sources */,
+				6C1655552A685D4900B84D0F /* CustomSearchBarDemo.swift in Sources */,
 				6CC8D7B62A3CD97B00D49910 /* SearchbarDemo.swift in Sources */,
 				6CD5436D2A65DAC600F0F534 /* PhotosUIDemo.swift in Sources */,
 				6C63C59E2A61B41900CDAA8F /* MailView.swift in Sources */,

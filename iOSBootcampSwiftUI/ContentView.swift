@@ -59,6 +59,7 @@ struct ContentView: View {
         (AnyView(SearchbarDemo()), "Search Bar", "With async await from API"),
         (AnyView(WebViewDemo()), "WebView", "Using Webkit with UIViewRepresentable"),
         (AnyView(TabViewDemo()), "TabViewDemo", "Using 5 ways of backgrounds"),
+        (AnyView(MainTabView()), "CustomTabView", "Like TitTok style"),
         (AnyView(LazyHGridDemo()), "LazyHGrid", "Similar to Horizontal CollectionView"),
         (AnyView(SafariServicesDemo()), "Safari Services", "And Link to open Safari Browser"),
         (AnyView(FeedbackView()), "Feedback View and Dark Mode", "Using sheet and Safari Services to show"),
@@ -66,7 +67,7 @@ struct ContentView: View {
         (AnyView(SettingsScreen()), "Settings Screen", "Using Form, Header, footer and Sections"),
         (AnyView(SendEmailDemo()), "Send Email Demo", "Using MessageUI and extensions"),
         (AnyView(PhotosUIDemo()), "PhotosUI", "Image Picker Controller"),
-        
+        (AnyView(CustomSearchBarDemo()), "CustomSearchBarDemo", "Using TextField and Binding text with onchange"),
     ]
     
     var body: some View {
